@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    box-sizing: border-box;   
+    scroll-behavior: smooth; 
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: white
+}
+
+i{
+    margin-right: -15%;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(23, 25, 48);
+    overflow: hidden;
+}
+
+main{
+    max-height: 80%;
+}
+
+header{
+    background-color: rgb(13, 18, 49);
+    height: 5rem;
+    width: 100%;
+}
+
+nav >ul, a, li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0 0 0 0;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    background-color: #0d1231;
+    height: 100%;
+    padding: 3px;
+} 
+
+input{
+    color: #000000;
+}
+
+#main-logo{
+    display: flex;
+    margin:  3rem auto 0 auto;
+    width: 450px;
+}
+
+#label-buscar{
+    display: flex;
+    width: 100%;
+    padding-left: 0%;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#form-buscar{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#form-sugerencias{
+    text-align: center;
+    width: 30%;
+    min-height: 50vh;
+    margin: 2rem auto 0 auto;
+    background-color: rgb(36, 40, 67);;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+#enviar_sugerencia{
+    display: block;
+    margin: 4rem auto 4rem auto;
+    width: 40%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: rgb(30, 144, 255); 
+    border: none;
+    border-radius: 10px;
+}
+
+#campos-sugerencias{
+    margin-top: 5em;
+    margin-bottom: 0;
+}
+
+label{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.name-campos{
+    font-size: 20px;
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    margin: 0 10px 0 0;
+    border: 0;
+}
+
+.inp-sugerencias, textarea{
+    display: inline-block;
+    width: 100%;
+    min-height: 2em;
+    border-radius: 5px;
+}
+
+#search{
+    padding: 20px;
+    width: 40%;
+    height: 2.5rem;
+    border-radius: 10px;
+    margin-bottom: auto;
+}
+
+#enviar_search{
+    background-color: transparent;
+    border-radius: 100%;    
+    border: none;
+    cursor: pointer;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+#search_icon{
+    width: 2.5rem;
+}
+
+.sites{
+    margin: 2rem;
+}
+
+.logo-sites{
+    height: 80px;
+    font-weight: bold;
+}
+
+#left-nav{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#right-nav{
+    margin-left: auto;
+    margin-right: 3rem;
+}
+
+#main-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0 3rem 0 3rem;
+    margin-top: 0;
+}
+
+a{
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#page-logo{
+    background-image: url(img/Home-icon.png);
+    width: 32px;
+    height: 37px;
+    font-size: 22px;
+}
+
+#page-logo:hover{
+    background-image: url(img/Home-icon-hover.png);
+    background-repeat: no-repeat;
+}
+
+#log-in:hover{
+    color: gray;
+}
+
+#enviar_sugerencia:hover{
+    background-color: rgb(21, 76, 131); 
+}
+
+a:hover, i:hover{
+    color: gray;
+}
+
+.button{
+    border-radius: 1rem;    
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover, #enviar_search:hover{
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate{
+    0%{
+        box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+    }
+}
