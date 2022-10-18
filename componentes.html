@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="helpers/include-html.min.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <title>Componentes | Bot Comparator</title>
+  </head>
+  <body>
+    <div data-include="components/header.html"></div>
+    <main>
+      <section class="container spacer filter-content">
+        <form class="form-filter">
+          <input type="text" name="filter" placeholder="Buscar producto ..." />
+        </form>
+        <div class="select-bg">
+          <select name="pages">
+            <option value="">Filtrar por página ...</option>
+            <option value="" hidden disabled>All Pages</option>
+            <option value="CyberPuerta">CyberPuerta</option>
+            <option value="DDTech">DDTech</option>
+            <option value="XtremeTecPC">XtremeTecPC</option>
+          </select>
+        </div>
+      </section>
+      <section class="grid container"></section>
+    </main>
+    <template id="product-template">
+      <article class="card">
+        <div class="top-card">
+          <h2 class="page-name">Pagina</h2>
+          <img src="" alt="" />
+        </div>
+        <div class="bottom-card">
+          <h3 class="product-title">Titulo</h3>
+          <p class="product-price">Precio</p>
+          <div class="product-stock">
+            <img id="stock" src="" alt="" />
+            <span id="stock-text"></span>
+          </div>
+        </div>
+      </article>
+    </template>
+    <script src="js/products.js" type="module"></script>
+  </body>
+</html>

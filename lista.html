@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="helpers/include-html.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <title>Lista de productos</title>
+  </head>
+  <body>
+    <div data-include="components/header.html"></div>
+    <main class="list-main">
+      <section class="container-list">
+        <h1>Lista de productos</h1>
+      </section>
+      <section class="list-info">
+        <h3>Productos</h3>
+        <h3>Total</h3>
+      </section>
+    </main>
+    <template id="carrito-card-template">
+      <article class="list-card">
+        <img src="" alt="" />
+        <div class="info-list-container">
+          <div>
+            <div class="left-info-list">
+              <h3 class="product-title">Title</h3>
+              <h2 class="page-name">Pagina</h2>
+            </div>
+          </div>
+          <div class="right-info-list">
+            <p class="product-price">Precio</p>
+            <div class="product-quantity">
+              <select name="cantidad" id="cantidad-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button class="delete-item">Eliminar</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </template>
+    <script src="js/list.js" type="module"></script>
+  </body>
+</html>

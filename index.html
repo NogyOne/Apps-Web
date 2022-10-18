@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="helpers/include-html.min.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
     <title>Bot Comparator</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <nav>            
-            <ul id="left-nav"> 
-                <a href="#" id="home">
-                    <div id="page-logo"></div>
-                </a>               
-                <a>Componentes</a>
-                <a href="sugerencias.html">Sugerencias</a>
-            </ul>
-            <ul id="right-nav">
-                <a>Lista</a>
-                <a><i class="fas fa-user"></i></a>
-            </ul>
-        </nav>
-    </header>
+  <body>
+    <div data-include="components/header.html"></div>
     <main>
-        <!-- <h1>COMPARA LOS PRECIOS DE TUS COMPONENTES DE DISTINTAS PÁGINAS</h1> -->
-        <img id="main-logo" src="img/Logo-v2.png" alt="Logo">
-        <form action="#" id="form-buscar">
-            <label id="label-buscar" for="search">
-                <input type="search" name="search" placeholder="Componente a buscar" id="search" required>
-                <button type="submit" id="enviar_search"> <img src="img/search_icon.png" id="search_icon" /></button>
-            </label>
+      <!-- <h1>COMPARA LOS PRECIOS DE TUS COMPONENTES DE DISTINTAS PÁGINAS</h1> -->
+      <img id="main-logo" src="images/Logo-v2.png" alt="Logo" />
+      <form action="#" id="form-buscar">
+        <label id="label-buscar" for="search">
+          <input
+            type="search"
+            name="search"
+            placeholder="Componente a buscar"
+            id="search"
+            required
+          />
+          <button type="submit" id="enviar_search">
+            <img src="images/search_icon.png" id="search_icon" />
+          </button>
+        </label>
+      </form>
 
-        </form>
+      <section id="main-content">
+        <div class="sites button">
+          <a href="https://ddtech.mx/" target="_blank">
+            <img
+              src="https://ddtech.mx/assets/img/ddtech.png?1646781481"
+              alt="ddtech.mx"
+              class="logo-sites"
+            />
+          </a>
+        </div>
 
-        <section id="main-content">            
-            <div class="sites button">
-                <a href="https://ddtech.mx/" target="_blank">
-                    <img src="https://ddtech.mx/assets/img/ddtech.png?1646781481" alt="ddtech.mx" class="logo-sites">
-                </a>
-            </div>
+        <div class="sites button">
+          <a
+            href="https://www.cyberpuerta.mx/?gclid=Cj0KCQjw6_CYBhDjARIsABnuSzovq0OGIIjOXzBgJNbcRDfGt7KynnYvkshwkcRnFexVDS0Ybej24CoaAvdXEALw_wcB"
+            target="_blank"
+          >
+            <img
+              src="https://www.cyberpuerta.mx/out/cyberpuertaV5/img/logo2.png"
+              alt="cyberpuerta"
+              class="logo-sites"
+            />
+          </a>
+        </div>
 
-            <div class="sites button">
-                <a href="https://www.cyberpuerta.mx/?gclid=Cj0KCQjw6_CYBhDjARIsABnuSzovq0OGIIjOXzBgJNbcRDfGt7KynnYvkshwkcRnFexVDS0Ybej24CoaAvdXEALw_wcB" target="_blank">
-                    <img src="https://www.cyberpuerta.mx/out/cyberpuertaV5/img/logo2.png" alt="cyberpuerta" class="logo-sites">
-                </a>
-            </div>
-
-            <div class="sites button">
-                <a href="https://www.xtremetecpc.com/" target="_blank">
-                    <img src="https://www.xtremetecpc.com/wp-content/uploads/2018/08/logo-2015.png" alt="xtremetecpc" class="logo-sites">
-                </a>
-            </div>
-        </section>
-
+        <div class="sites button">
+          <a href="https://www.xtremetecpc.com/" target="_blank">
+            <img
+              src="https://www.xtremetecpc.com/wp-content/uploads/2018/08/logo-2015.png"
+              alt="xtremetecpc"
+              class="logo-sites"
+            />
+          </a>
+        </div>
+      </section>
     </main>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0d1231" fill-opacity="1"
-            d="M0,128L40,154.7C80,181,160,235,240,224C320,213,400,139,480,133.3C560,128,640,192,720,202.7C800,213,880,171,960,170.7C1040,171,1120,213,1200,192C1280,171,1360,85,1400,42.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-            data-darkreader-inline-fill="" style="--darkreader-inline-fill:#181a1b;"></path>
+      <path
+        fill="#0d1231"
+        fill-opacity="1"
+        d="M0,128L40,154.7C80,181,160,235,240,224C320,213,400,139,480,133.3C560,128,640,192,720,202.7C800,213,880,171,960,170.7C1040,171,1120,213,1200,192C1280,171,1360,85,1400,42.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        data-darkreader-inline-fill=""
+        style="--darkreader-inline-fill: #181a1b"
+      ></path>
     </svg>
-</body>
-
+  </body>
 </html>
