@@ -591,22 +591,36 @@ i:hover {
 /* Lista de productos */
 
 .list-main {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
 
 .container-list {
-  background-color: #363955;
+  background-color: #252842;
   margin: 1rem;
   padding: 1.2rem;
   max-width: 1440px;
+  border: 1px solid #313347;
+}
+
+.container-list hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #606771;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
 }
 
 .list-card {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #606771;
 }
 
 .list-card img {
@@ -619,22 +633,33 @@ i:hover {
 
 .right-info-list {
   height: 100%;
-  
-  flex-direction: column;  
-  align-items: center;
-  justify-content: space-between;
   float: right;
 }
 
 .left-info-list {
   float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   width: 80%;
+}
+
+.left-info-list h3 {
+  margin-top: 0;
+}
+
+.left-info-list h2 {
+  margin-top: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 .list-info {
   margin: 1rem 1rem;
   padding: 2rem;
-  background-color: #363955;
+  background-color: #252842;
+  border: 1px solid #313347;
+
   height: 10%;
   width: 20%;
 }
