@@ -17,13 +17,16 @@
   <body>
     <div data-include="components/header.html"></div>
     <main class="list-main">
+
       <section class="container-list">
         <h1>Lista de productos</h1>
       </section>
+
       <section class="list-info">
-        <h3>Productos</h3>
-        <h3>Total</h3>
+        <h3>Productos: 2</h3>
+        <h3>Total: $3,000,000</h3>
       </section>
+
     </main>
     <template id="carrito-card-template">
       <article class="list-card">
@@ -35,6 +38,7 @@
               <h2 class="page-name">Pagina</h2>
             </div>
           </div>
+
           <div class="right-info-list">
             <p class="product-price">Precio</p>
             <div class="product-quantity">
@@ -48,9 +52,11 @@
               <button class="delete-item">Eliminar</button>
             </div>
           </div>
+          
         </div>
       </article>
     </template>
+    
     <script src="js/list.js" type="module"></script>
   </body>
 </html>
