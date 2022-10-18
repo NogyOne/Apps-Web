@@ -23,7 +23,7 @@ i {
 
 svg {
   position: absolute;
-  bottom: 0;
+  bottom: 15;
   left: 0;
 }
 
@@ -214,6 +214,10 @@ textarea {
 
 #enviar_sugerencia:hover {
   background-color: rgb(21, 76, 131);
+}
+
+.delete-item:hover, select:hover{
+  background-color: rgb(46, 46, 46);
 }
 
 a {
@@ -652,6 +656,11 @@ i:hover {
 .left-info-list h2 {
   margin-top: 0;
   font-family: 'Inter', sans-serif;
+}
+
+.delete-item, select, option{
+  background-color: rgb(107, 107, 107);
+  border: none;
 }
 
 .list-info {
