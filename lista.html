@@ -12,7 +12,7 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
-    <title>Lista de productos</title>
+    <title>Lista | Bot Comparator</title>
   </head>
   <body>
     <div data-include="components/header.html"></div>
@@ -20,11 +20,12 @@
       <section class="container-list">
         <h1>Lista de productos</h1>
         <hr />
+        <h2 class="no-items none">No hay productos en la lista</h2>
       </section>
 
       <section class="list-info">
-        <h3>Productos: 2</h3>
-        <h3>Total: $3,000,000</h3>
+        <h3 id="total-products-list">Productos: 2</h3>
+        <h3 id="total-list">Total: $3,000,000</h3>
       </section>
     </main>
     <template id="carrito-card-template">

@@ -9,7 +9,6 @@ const d = document,
   $fragment = d.createDocumentFragment()
 
 const json = await helpHttp().get(SHOPS)
-console.log(json)
 const ddtech = json[2]
 
 ddtech.products.slice(500, 520).forEach(el => {

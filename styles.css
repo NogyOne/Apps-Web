@@ -607,6 +607,7 @@ i:hover {
   background-color: #252842;
   margin: 1rem;
   padding: 1.2rem;
+  width: 100%;
   max-width: 1440px;
   border: 1px solid #313347;
 }
@@ -678,4 +679,12 @@ option {
 
 .info-list-container {
   width: calc(100% - 200px);
+}
+
+.no-items {
+  text-align: center;
+}
+
+.none {
+  display: none;
 }
