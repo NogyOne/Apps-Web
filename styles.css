@@ -398,6 +398,19 @@ i:hover {
   color: inherit;
 }
 
+.btn-card {
+  display: flex;
+  background-color: #6b6b6b;
+  border-radius: 6px;
+  border: none;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 /* Login */
 
 .login-container {
@@ -641,6 +654,13 @@ i:hover {
 .right-info-list {
   height: 100%;
   float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-info-list p {
+  text-align: end;
 }
 
 .left-info-list {
@@ -652,20 +672,31 @@ i:hover {
   width: 80%;
 }
 
-.left-info-list h3 {
+/* .left-info-list h3 {
   margin-top: 0;
-}
+} */
 
 .left-info-list h2 {
   margin-top: 0;
   font-family: 'Inter', sans-serif;
 }
 
-.delete-item,
-select,
-option {
-  background-color: rgb(107, 107, 107);
+.btn-list {
+  background-color: #6b6b6b;
   border: none;
+}
+
+.product-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.product-quantity span {
+  font-weight: bold;
+  padding: 0 0.2rem;
 }
 
 .list-info {

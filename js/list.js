@@ -11,7 +11,7 @@ const addList = async () => {
   const json = await helpHttp().get(SHOPS)
   const cyberpuerta = json[2]
 
-  cyberpuerta.products.slice(400, 410).forEach(el => {
+  cyberpuerta.products.slice(600, 610).forEach(el => {
     $template.querySelector('.list-card img').setAttribute('src', el.image)
     $template.querySelector('.list-card img').setAttribute('alt', el.name)
     $template.querySelector('.page-name').textContent = cyberpuerta.name
@@ -24,10 +24,22 @@ const addList = async () => {
   $container.appendChild($fragment)
 }
 
-const updateSelects = () => {
-  const $select = d.querySelectorAll('#cantidad-select')
-  $select.forEach(el => {
-    el.addEventListener('change', e => {
+const updateQuantity = () => {
+  const $btnMinus = d.querySelectorAll('#btn-minus'),
+    $btnPlus = d.querySelectorAll('#btn-plus')
+  $btnMinus.forEach(el => {
+    el.addEventListener('click', () => {
+      const $cantidad = el.nextElementSibling
+      if ($cantidad.textContent > 1) {
+        $cantidad.textContent--
+        updatePrice()
+      }
+    })
+  })
+  $btnPlus.forEach(el => {
+    el.addEventListener('click', () => {
+      const $cantidad = el.previousElementSibling
+      $cantidad.textContent++
       updatePrice()
     })
   })
@@ -40,10 +52,11 @@ const updatePrice = () => {
     totalItems = 0
   d.querySelectorAll('.list-card').forEach(el => {
     const $price = el.querySelector('.product-price').textContent.slice(1)
-    const $input = el.querySelector('#cantidad-select')
+    const $cantidad = el.querySelector('.cantidad-item')
+
     const price = Number($price.replace(/[^0-9\.-]+/g, ''))
-    total += price * +$input.value
-    totalItems += +$input.value
+    total += price * +$cantidad.textContent
+    totalItems += +$cantidad.textContent
   })
 
   $totalItems.textContent = 'Productos: ' + totalItems
@@ -56,7 +69,7 @@ const updatePrice = () => {
 }
 
 const deleteItem = () => {
-  const $delete = d.querySelectorAll('.delete-item')
+  const $delete = d.querySelectorAll('#delete-item')
   $delete.forEach(el => {
     el.addEventListener('click', e => {
       e.target.parentElement.parentElement.parentElement.parentElement.remove()
@@ -78,6 +91,6 @@ const noItems = () => {
 
 await addList()
 updatePrice()
-updateSelects()
+updateQuantity()
 deleteItem()
 noItems()
