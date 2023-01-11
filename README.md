@@ -44,6 +44,7 @@ Este proyecto fue realizado como proyecto final de la materia Aplicaciones Web.
 - CSS
 - JavaScript
 - Java JSP
+- MongoDB
 - Java Servlets
 - Bootstrap
 
