@@ -12,9 +12,9 @@ const addList = async () => {
     $fragment = d.createDocumentFragment()
 
   const json = await helpHttp().get(SHOPS)
-  const ddtech = json[2]
+  const ddtech = json[1]
 
-  ddtech.products.slice(600, 620).forEach(el => {
+  ddtech.products.slice(0, 620).forEach(el => {
     $template.querySelector('.card img').setAttribute('src', el.image)
     $template.querySelector('.card img').setAttribute('alt', el.name)
     $template.querySelector('.page-name').textContent = ddtech.name
