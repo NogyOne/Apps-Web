@@ -17,9 +17,13 @@
 ### Screenshot
 
 ![Página del home](./images/Home.png)
+Página del home
 ![Página de los componentes](./images/Components.png)
+Página de los componentes
 ![Página del login](./images/login.png)
+Página del login
 ![Página de la lista](./images/List.png)
+Página de la lista
 
 ## Proyecto
 
